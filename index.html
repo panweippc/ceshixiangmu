@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>宿舍管理系统 · 首页</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-logo">宿</span>
+      <span class="brand-name">宿舍管理系统</span>
+    </div>
+    <nav class="nav">
+      <a class="nav-link active" href="index.html">首页</a>
+      <a class="nav-link" href="basic-info.html">基础信息</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>欢迎使用宿舍管理系统</h1>
+      <p>本系统用于管理宿舍楼栋、房间床位与学生入住信息，当前为前端演示版本，数据均为本地示例。</p>
+    </section>
+
+    <section class="stats" id="stats">
+      <!-- 统计卡片由 JS 渲染 -->
+    </section>
+
+    <section class="panel">
+      <h2 class="panel-title">最近动态</h2>
+      <ul class="timeline" id="timeline">
+        <!-- 动态列表由 JS 渲染 -->
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2 class="panel-title">快捷入口</h2>
+      <div class="quick-links">
+        <a class="quick-card" href="basic-info.html#dorm">
+          <span class="quick-icon">🏢</span>
+          <span class="quick-text">宿舍信息</span>
+        </a>
+        <a class="quick-card" href="basic-info.html#student">
+          <span class="quick-icon">👥</span>
+          <span class="quick-text">学生信息</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>宿舍管理系统 · 前端演示版</span>
+    <span>纯静态页面，无后端依赖</span>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>宿舍管理系统 · 基础信息</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-logo">宿</span>
+      <span class="brand-name">宿舍管理系统</span>
+    </div>
+    <nav class="nav">
+      <a class="nav-link" href="index.html">首页</a>
+      <a class="nav-link active" href="basic-info.html">基础信息</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="tabs">
+      <button class="tab active" data-target="dorm">宿舍信息</button>
+      <button class="tab" data-target="student">学生信息</button>
+    </section>
+
+    <section class="panel" id="dorm">
+      <h2 class="panel-title">宿舍列表</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>楼栋</th>
+              <th>房间号</th>
+              <th>床位总数</th>
+              <th>已入住</th>
+              <th>空床位</th>
+              <th>管理员</th>
+            </tr>
+          </thead>
+          <tbody id="dorm-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel hidden" id="student">
+      <h2 class="panel-title">学生列表</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>学号</th>
+              <th>姓名</th>
+              <th>性别</th>
+              <th>楼栋/房间</th>
+              <th>联系电话</th>
+            </tr>
+          </thead>
+          <tbody id="student-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>宿舍管理系统 · 前端演示版</span>
+    <span>纯静态页面，无后端依赖</span>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/basic-info.js"></script>
+</body>
+</html>
