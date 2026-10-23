@@ -22,6 +22,7 @@
     <section class="tabs">
       <button class="tab active" data-target="dorm">宿舍信息</button>
       <button class="tab" data-target="student">学生信息</button>
+      <button class="tab" data-target="material">物资信息</button>
     </section>
 
     <section class="panel" id="dorm">
@@ -57,6 +58,24 @@
             </tr>
           </thead>
           <tbody id="student-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel hidden" id="material">
+      <h2 class="panel-title">物资列表</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>物资名称</th>
+              <th>类别</th>
+              <th>数量</th>
+              <th>存放位置</th>
+              <th>状态</th>
+            </tr>
+          </thead>
+          <tbody id="material-body"></tbody>
         </table>
       </div>
     </section>

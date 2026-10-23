@@ -20,6 +20,16 @@ const STUDENT_DATA = [
   { id: "20230107", name: "林静", gender: "女", dorm: "3号楼 302", phone: "13800000007" },
 ];
 
+const MATERIAL_DATA = [
+  { name: "双层床", category: "家具", count: 24, location: "各宿舍房间", status: "在用" },
+  { name: "书桌", category: "家具", count: 26, location: "各宿舍房间", status: "在用" },
+  { name: "空调", category: "电器", count: 12, location: "各宿舍房间", status: "在用" },
+  { name: "热水器", category: "电器", count: 12, location: "各宿舍房间", status: "待维修" },
+  { name: "灭火器", category: "消防", count: 18, location: "楼道公共区", status: "在用" },
+  { name: "扫把拖把", category: "清洁", count: 30, location: "各楼层保洁间", status: "在用" },
+  { name: "维修工具箱", category: "维修", count: 4, location: "宿管值班室", status: "闲置" },
+];
+
 const TIMELINE_DATA = [
   { time: "2026-10-23 09:12", text: "3号楼 301 新增入住 1 人" },
   { time: "2026-10-22 16:40", text: "2号楼 202 报修：水管漏水，已处理" },

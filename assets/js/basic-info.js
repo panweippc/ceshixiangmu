@@ -25,11 +25,24 @@
       </tr>`
   ).join("");
 
+  const materialBody = document.getElementById("material-body");
+  materialBody.innerHTML = MATERIAL_DATA.map(
+    (m) => `
+      <tr>
+        <td>${m.name}</td>
+        <td>${m.category}</td>
+        <td>${m.count}</td>
+        <td>${m.location}</td>
+        <td>${m.status}</td>
+      </tr>`
+  ).join("");
+
   // 标签切换
   const tabs = document.querySelectorAll(".tab");
   const sections = {
     dorm: document.getElementById("dorm"),
     student: document.getElementById("student"),
+    material: document.getElementById("material"),
   };
 
   tabs.forEach((tab) => {
