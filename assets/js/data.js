@@ -30,6 +30,14 @@ const MATERIAL_DATA = [
   { name: "维修工具箱", category: "维修", count: 4, location: "宿管值班室", status: "闲置" },
 ];
 
+const STAFF_DATA = [
+  { id: "SG001", name: "王芳", gender: "女", building: "1号楼", phone: "13900000001", entryDate: "2021-03-15", status: "在职" },
+  { id: "SG002", name: "李强", gender: "男", building: "2号楼", phone: "13900000002", entryDate: "2020-09-01", status: "在职" },
+  { id: "SG003", name: "赵敏", gender: "女", building: "3号楼", phone: "13900000003", entryDate: "2022-06-20", status: "在职" },
+  { id: "SG004", name: "陈建国", gender: "男", building: "1号楼", phone: "13900000004", entryDate: "2019-11-08", status: "休假" },
+  { id: "SG005", name: "刘丽", gender: "女", building: "2号楼", phone: "13900000005", entryDate: "2023-02-13", status: "在职" },
+];
+
 const TIMELINE_DATA = [
   { time: "2026-10-23 09:12", text: "3号楼 301 新增入住 1 人" },
   { time: "2026-10-22 16:40", text: "2号楼 202 报修：水管漏水，已处理" },
